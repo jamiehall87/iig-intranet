@@ -1527,7 +1527,7 @@ blockquote:after,
  */
 
 .site {
-	background-color: #fff;
+	background-color: #eeeeee;
 }
 
 .site-inner {
@@ -2732,7 +2732,6 @@ p > video {
 		background: inherit;
 		content: "";
 		display: block;
-		height: 21px;
 		left: 0;
 		position: fixed;
 		width: 100%;
@@ -2751,9 +2750,6 @@ p > video {
 		bottom: 0;
 	}
 
-	.site {
-		margin: 21px;
-	}
 
 	.site-main {
 		margin-bottom: 5.25em;
@@ -3976,4 +3972,65 @@ p > video {
 	.widecolumn {
 		padding: 0;
 	}
+}
+
+/*---------------------------
+---------ADDED RULES---------
+---------------------------*/
+#Welcome_Banner {
+	max-width: 700px;
+	width: 100%;
+}
+
+header.entry-header {
+	text-align: center;
+}
+#wpmem_login_form label {
+	color: #555555;
+	font-size: 14px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.post__flex-parent {
+	display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+	display: flex;
+	
+	margin: 0px;
+	padding-top: 50px;
+	width: 100%;
+}
+@media (max-width: 56.875em) {
+	.post__flex-parent {
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+
+		padding-top: 35px;
+	}
+}
+.post__flex-child {
+	-moz-flex: 50%;
+    -webkit-flex: 50%;
+    -ms-flex: 50%;
+	flex: 50%;
+
+	margin: 0 !important;
+}
+.post__flex-child--full-width {
+	-moz-flex: 100%;
+    -webkit-flex: 100%;
+    -ms-flex: 100%;
+	flex: 100%;
+
+	margin: auto;
+	max-width:1000px;
+	padding: 0px 25px;
+	text-align: center;
+}
+.post__flex-child--full-width h1 {
+	color: #a51e7f;
+	padding-bottom: 20px;
 }

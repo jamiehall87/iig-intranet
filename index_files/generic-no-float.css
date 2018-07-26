@@ -157,6 +157,11 @@ see https://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 	margin:0;
 	padding:0;
 }
+@media(max-width: 56.875em) {
+	#wpmem_login .form {
+	padding: 0px 20px 20px 20px;
+	}
+}
 #wpmem_reg .clear, 
 #wpmem_login .clear {
 	clear:both;
@@ -181,6 +186,11 @@ see https://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 #wpmem_reg .div_date { 
 	width:74%;
 	margin:0 0 14px 0;
+}
+@media(max-width: 56.875em) {
+	#wpmem_login .div_text {
+		width: 100%
+	}
 }
 #wpmem_login input[type="checkbox"] {
 	margin: 12px 2px;
@@ -270,7 +280,7 @@ see https://rocketgeek.com/tips-and-tricks/load-a-custom-stylesheet/
 	#wpmem_reg .div_text, #wpmem_reg .div_textarea, 
 	#wpmem_reg .div_select, #wpmem_login .div_text,
 	#wpmem_reg .div_checkbox {
-		width: 98%;
+		width: 100%;
 	}
 	#wpmem_msg, .wpmem_msg {
 		width: 100%;
